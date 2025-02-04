@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="images/favicon.ico" type="image/ico">
+    <meta charset="UTF-8" />
+    <title>Burger Valencia</title>
+    <style>body {
+        src: url("https://fonts.google.com/specimen/Kalam?query=kalam");
+        font-family: "Kalam";
+        background-color: rgb(252, 202, 141);
+        font-weight: bold; 
+      }
+      
+      header {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        top: 0px;
+      }
+      
+      .banner {
+        width: 280px;
+        height: 140px;
+      }
+
+      .titulo{
+        text-align: left;
+      }
+      
+      nav {
+        background-color: grey;
+        text-align: center;
+        position: sticky;
+        top: 0px;
+        font-size: 20px;
+        padding: 1.2%;
+        z-index: 10;
+      }
+      
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        color: rgb(252, 202, 141);
+      }
+      
+      .container {  /*este es el contenedor general del inicio y carta. Para las reservas usamos otro*/
+        margin-right: 20%;
+        margin-left: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .rrss {
+        border: 1px solid red;
+        width: 165px;
+        height: 320px;
+        font-size: 20px;
+        position: fixed;
+        display: flex;
+        top: 300px;
+        right: 50px;
+        flex-direction: column;
+        margin-top: auto;
+        align-items: center;
+        gap: 15px;
+      }
+      
+      .rrsstexto {
+        margin: auto;
+        text-wrap: balance;
+      }
+      
+      .img3 {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        margin-top: 0;
+      }
+      
+      .img3:hover{ /*hice un hover para las imágenes de las rrss porque pensé que era más interactivo así*/
+          transform: scale(1.1);
+      }
+      
+      .rrssimg { 
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      
+      h2 {
+        color: rgb(255, 0, 128);
+      }
+      
+      .img1 {
+        width: 300px;
+        height: 300px;
+        margin: 2% auto;
+        border-radius: 25%;
+        z-index: 1;
+      }
+      
+      .img1-container { /*en este div está la carta, para que quepan solo 2 hamburguesas por fila, por eso el wrap*/
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+      }
+      
+      .burgir { /*este div es para cada hamburguesa, su nombre y precio quede en columna*/
+        padding: 2%;
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .img1:hover {
+        transform: scale(1.1);
+      }
+      
+      iframe {
+        border-radius: 10%;
+      }
+      
+      .contactar { /*uso otro div diferente porque el de arriba no me servía ya que estaba colocado en columnas*/
+        margin-right: 20%;
+        margin-left: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      
+      fieldset {
+        border-radius: 10%;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      
+      footer {
+        background-color: grey;
+        text-align: center;
+        padding: 1.5px;
+      }</style>>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <a id="inicio"></a>
+    <header>
+        <img class="banner" src="images/burgerbanner.jpg">
+        <h2 class="titulo">Burguer Valencia</h2>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>&emsp;&emsp;&emsp;
+        <a href="#somos">¿Quiénes somos?</a>&emsp;&emsp;&emsp;
+        <a href="#carta">Nuestra carta</a>&emsp;&emsp;&emsp;
+        <a href="#reservas">Reservas y Localización</a>
+    </nav>
+
+    <div class="container"> <!--este es el contenedor que engloba casi la totalidad de la web, excepto las reservas-->
+        <div class="rrss">
+            <p class="rrsstext">Síguenos en las redes sociales</p>
+            <div class="rrssimg">
+                <img class="img3" src="images/facebook.png">
+                <img class="img3" src="images/twitter.png">
+            </div>
+            <div class="rrssimg">
+                <img class="img3" src="images/youtube.png">
+                <img class="img3" src="images/instagram.png">
+            </div>
+            <div class="rrssimg">
+                <img class="img3" src="images/google.png">
+                <img class="img3" src="images/pinterest.png">
+            </div>
+        </div>
+
+        <a id="somos"></a>
+        <h2>¿Quiénes somos?</h2>
+        <p>Durante muchos años y muchos viajes nos enamoramos de las mega burgers y nos propusimos traerlas a
+            Valencia.<br>
+            Somos la primera mega burger de la ciudad de Valencia.<br>
+            Ahora nuestro objetivo es hacer las mejores mega burgers de la máxima calidad.<br>
+            Para ello usamos carne de vaca gallega, pan brioche artesano, los mejores quesos y las mejores salsas todas
+            hechas por nosotros.<br>
+            Todos los días hacemos las bolitas que luego convertimos en las mega burger con carne de vaca gallega fresca
+            para poder ofrecer la máxima calidad</p>
+
+        <a id="carta"></a>
+        <h2>Nuestra carta</h2>
+
+        <div class="img1-container"> <!--cada hamburguesa está dentro de su propio div-->
+            <div class="burgir">
+                <img class="img1" src="images/burger.png">
+                <p>Hamburguesa 1</p>
+                <p>12€</p>
+            </div>
+
+            <div class="burgir">
+                <img class="img1" src="images/burger.png">
+                <p>Hamburguesa 2</p>
+                <p>12€</p>
+            </div>
+
+            <div class="burgir">
+                <img class="img1" src="images/burger.png">
+                <p>Hamburguesa 3</p>
+                <p>12€</p>
+            </div>
+
+            <div class="burgir">
+                <img class="img1" src="images/burger.png">
+                <p>Hamburguesa 4</p>
+                <p>12€</p>
+            </div>
+
+            <div class="burgir">
+                <img class="img1" src="images/burger.png">
+                <p>Hamburguesa 5</p>
+                <p>12€</p>
+            </div>
+
+            <div class="burgir">
+                <img class="img1" src="images/burger.png">
+                <p>Hamburguesa 6</p>
+                <p>12€</p>
+            </div>
+
+            <div class="burgir">
+                <img class="img1" src="images/burger.png">
+                <p>Hamburguesa 7</p>
+                <p>12€</p>
+            </div>
+
+            <div class="burgir">
+                <img class="img1" src="images/burger.png">
+                <p>Hamburguesa 8</p>
+                <p>12€</p>
+            </div>
+        </div>
+        
+        <a id="reservas"></a>
+        <h2>Reservas y Localización</h2> <!--aunque todo el tema de reservar y localizar esté en un div diferente,
+        el título de sección lo mantengo en el div anterior para que mantenga esas propiedades-->
+    </div>
+
+    <div class="contactar">
+        <fieldset>
+            <legend>Formulario de reserva</legend>
+            <div class="campo">
+                <label>Nombre y Apellidos:</label><br>
+                <input class="input-text" type="text" placeholder="Nombre" />
+            </div>
+            <div class="campo">
+                <label>Teléfono</label><br>
+                <input class="input-text" type="tel"><br>
+            </div>
+
+            <div class="campo">
+                <label>Número de personas:</label><br>
+                <input class="input-text" type="text" />
+            </div>
+
+            <div class="campo">
+                <label>Email:</label><br>
+                <input class="input-text" type="email" placeholder="Email" />
+            </div>
+
+            <div>
+                <input type="button" value="Enviar" />
+            </div>
+        </fieldset>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3076.542966481926!2d-0.4617310242177832!3d39.54736307159257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd605bc401aec5b3%3A0x8968665575dd9e1a!2sC%C3%A1mara%20FP!5e0!3m2!1ses!2ses!4v1738657881185!5m2!1ses!2ses"
+            width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    <br> <br>
+
+    <footer>
+        <p>Copyright&copy; Maite Castro</p>
+    </footer>
+</body>
+
+</html>
